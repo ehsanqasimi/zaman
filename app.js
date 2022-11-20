@@ -33,8 +33,12 @@ if (toggleBtn != null) {
 } else {
     
 }
-window.addEventListener('resize', changeNav)
+window.addEventListener('resize', () => {
+    location.reload()
+    changeNav()
+})
 function changeNav() {
+    
     if (window.innerWidth <= 900) {
 
         navElement.innerHTML = `
