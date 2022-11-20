@@ -40,27 +40,40 @@ html {
   font-family: "Courier New", Courier, monospace;
   font-family: "Comic Neue", cursive;
 }
-.container .home .home-content .down-icon {
-  font-size: 20px;
+.container .home .home-content .down-arrow {
+  color: white;
+  font-size: 5rem;
 }
-.container .home .slider-container .image {
-  top: 0;
-  left: 0;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  z-index: -10;
-  display: flex;
-}
-.container .home .slider-container .image img {
+.container .home .video-container {
+  width: 100%;
+  height: 120vh;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  padding-inline: 0 in !important;
+  padding-right: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100vw;
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+.container .home .video-container video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 .container main {
   padding-inline: 30px;
 }
 .container main nav {
+  margin-top: 53px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;

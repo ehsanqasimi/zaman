@@ -1,24 +1,6 @@
 
-let imageContainer = document.querySelector('.image')
-
-for (let i = 1; i < 20; i++) {
-    imageContainer.innerHTML += `<img src="./sliderImages/${i}.jpeg" alt="slider image">`
-}
-imageContainer.innerHTML += '<img src="./sliderImages/1.jpeg" alt="slider image">'
-
-let index = 0
-
-setInterval(() => {
-    index++
-    if (index === 20) {
-        index = 0
-        imageContainer.style.transition = 'none'
-    } else {
-        imageContainer.style.transition = 'transform 1s ease-in-out'
-    }
-    imageContainer.style.transform = 'translateX(-' + 100 * index + '%)'
-}, 3000)
-
+let video = document.querySelector('.video')
+video.disablePictureInPicture = true
 
 //   nav
 
