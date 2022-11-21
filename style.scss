@@ -12,7 +12,6 @@ $white: #fff;
 }
 
 body{
-    overflow-x: hidden;
     font-family: 'Times New Roman', Times, serif;
     
 }
@@ -21,6 +20,8 @@ html{
 }
 .container{
     .home {
+        overflow-y: auto;
+        overflow-x: hidden;
         position: relative;
         width: 100%;
         height: 100vh;
@@ -55,7 +56,6 @@ html{
             width: 130%;
             height: 100vh;
             position: absolute;
-            background-color: red;
             z-index: -2;
             overflow: hidden;
             video{
@@ -68,7 +68,6 @@ html{
     main{
         padding-inline: 30px;
         nav{
-            margin-top: px;
             width: 100%;
             position: sticky;
             top: 0;
@@ -76,7 +75,7 @@ html{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-block: 30px;
+            box-shadow: 0 0 0 30px white;
             background-color: white;
             .logo{
                 width: 80px;
@@ -419,7 +418,8 @@ html{
             .home-content{
 
                 .video-container{
-                    //height: 200vh;
+                    height: 200vh;
+                    border: 2px solid red;
                 }
             }
         }

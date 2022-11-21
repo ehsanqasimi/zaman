@@ -2,6 +2,7 @@
 let video = document.querySelector('.video')
 video.disablePictureInPicture = true
 
+
 //   nav
 
 
@@ -65,6 +66,7 @@ function changeNav() {
                 
             }
     } else if (window.innerWidth >= 900) {
+        video.src = './slider.mp4'
         navElement.innerHTML = `
             <ul class="sub-links">
                 <li><a href="#home">Home</a></li>
